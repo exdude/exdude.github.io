@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background: url('../../img/bg.png');
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@blue: rgb(86, 91, 235);
+@green: #3DAC70;
+@red: #C25151;
+
+.pick {
+    color: @blue !important;
+    font-weight: 900 !important;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    color: @blue;
+    z-index: 1001;
+    .exd_header {
+        display: flex;
+        width: 1080px;
+        height: 65px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        .header_logo {
+            .logo {
+                font-size: 36px;
+                font-weight: 900;
+            }
+            p {
+                font-weight: 300;
+                color: #c2c4ff;
+                font-size: 11px;
+                    b {
+                        color: #b0b2f5;
+                    }
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 350px;
+                li {
+                    list-style-type: none;
+                    a {
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    .exd_abme {
+        margin: 150px auto 0 auto;
+        width: 1080px;
+        height: 80vh;
+        .abme_left {
+            .left__item {
+                padding: 100px 0 0 120px;
+                background: url('../../img/box.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 400px;
+                margin: 0 0 0 -60px;
+                h1 {
+                    z-index: 1;
+                    font-size: 72px;
+                    font-weight: 900;
+                    color: @blue;
+                }
+                .left__item__skills {
+                    display: flex;
+                    flex-flow: row;
+                    b {
+                        color: #757AFF;
+                        font-size: 36px;
+                    }
+                    ul {
+                        margin-top: 15px;
+                        li {
+                            font-size: 22px;
+                            list-style-type: none;
+                            font-weight: 300;
+                            span {
+                                color: #A0A4FF;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                    p {
+                        font-weight: 300;
+                        font-size: 24px;
+                    }
+                    .item__skills__b {
+                        min-width: 300px;
+                    }
+                    .item__skills__a {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-between;
+                        height: 260px;
+                        b {
+                            font-size: 18px;
+                            color: @blue;
+                            font-weight: 900;
+                        }
+                        span {
+                            font-size: 18px;
+                            color: #A0A4FF;
+                            font-weight: 400;
+                        }
+                        .skills__a__tags {
+                            display: flex;
+                            flex-flow: column nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .exd_projects {
+        margin: auto;
+        width: 1080px;
+        height: 80vh;
+        .projects_sections {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                font-size: 32px;
+                text-transform: uppercase;
+                font-weight: 900;
+                color: @blue;
+            }
+            .sections {
+                display: flex;
+                margin-top: 50px;
+                .sections_img {
+                    background: url('../../img/box_two.png') no-repeat;
+                    min-width: 350px;
+                    min-height: 420px;
+                    margin: 0 20px 0 0;
+                    transition: 1s;
+                }
+                .sections_img:hover {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+                .sections_disc {
+                    a {
+                        font-weight: 900;
+                        font-size: 24px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: @blue;
+                    }
+                    p {
+                        font-weight: 300;
+                        font-size: 18px;
+                        margin: 10px 0 20px 0;
+                    }
+                    b {
+                        color: @blue;
+                        font-size: 20px; 
+                        font-weight: 900;
+                    }
+                    ul {
+                        margin: 10px 0 20px 0;
+                        li {
+                            font-weight: 300;
+                           font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .exd_contacts {
+        margin: auto;
+        width: 1080px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        h2 {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: @blue;
+        }
+        .contacts_box {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-top: 50px;
+            .box__avatar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 50px;
+                img {
+                    border-radius: 10px;
+                }
+                a {
+                    color: @blue;
+                    font-weight: 800;
+                    font-size: 20px;  
+                }
+            }
+            .box_contacts {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                p {
+                    color: @blue;
+                    font-weight: 800;
+                    font-size: 20px; 
+                }
+                span {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    b {
+                        color: @blue;
+                        font-size: 20px; 
+                        font-weight: 900;
+                    }
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background: rgb(71, 71, 71);
+    .footer_contain {
+        width: 1080px;
+        height: 65px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            color: rgb(190, 190, 190);
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .exd_header {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column;
+    }
+    .exd_abme {
+        margin: 40px auto 0 auto !important;
+        width: 100% !important;
+        height: auto !important;
+        .abme_left {
+            .left__item {
+                padding: 100px 0 0 80px !important;
+                h1 {
+                    font-size: 42px !important;
+                }
+            }
+            .left__item__skills {
+                flex-direction: column !important;
+                .item__skills__a {
+                    margin-top: 170px;
+                    padding: 15px;
+                    height: auto;
+                    p {
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+    .exd_projects {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 300px !important;
+        .projects_sections {
+            .sections {
+                flex-direction: column;
+                .sections_img {
+                    min-width: auto !important;
+                    margin: 0 0 0 0 !important; 
+                }
+                .sections_disc {   
+                    padding: 25px !important;
+                }
+            }
+        }
+    }
+    .exd_contacts {
+        width: 100% !important;
+        height: auto !important;
+        .contacts_box {
+            flex-direction: column !important;
+            .box__avatar {
+                margin: 0 !important;
+            }
+            .box_contacts {
+                margin: 50px 0 50px 0;
+                text-align: center !important;
+            }
+        }
+    }
+    .footer_contain {
+        width: 100% !important;
+    }
+}

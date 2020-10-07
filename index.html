@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./assets/css/min/style.css">
+    <title>EXDEVELOPER PAGE</title>
+</head>
+<body>
+    <header>
+        <div class="exd_header">
+            <div class="header_logo">
+                <a class="logo">EXD</a>
+                <p class="exd__disc">EXD - значит <b>E</b><b>X</b>catly <b>D</b>ude.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="exd_menu pick abme">Обо мне</a></li>
+                    <li><a href="#projects" class="exd_menu projects">Проекты</a></li>
+                    <li><a href="#contacts" class="exd_menu contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="abme" class="exd_abme exd">
+            <div class="abme_left">
+                <div data-aos="fade-up" class="left__item">
+                    <h1 data-aos="flip-up">EXDEVELOPER</h1>
+                    <div class="left__item__skills">
+                        <div class="item__skills__b" data-aos="fade-right">
+                            <b>Skills:</b>
+                            <ul>
+                                <li><span class="item__span">Vanilla</span> - skilled</li>
+                                <li><span class="item__span">Vue</span> - study</li>
+                                <li><span class="item__span">Node</span> -study</li>
+                                <li><span class="item__span">TypeScript</span> - study</li>
+                            </ul>
+                        </div>
+                        <div class="item__skills__a" data-aos="fade-left">
+                            <p>Всем привет! Меня зовут Ринат и я Junior JS разработчик. Сейчас в процессе изучения всей Frontend части, после которой последует изучения всей подногодной Backend. В планах стать Full-Stack разработчиком ;-)</p>
+                            <div class="skills__a__tags">
+                                <b>Прочие скиллы:</b>
+                                <span>html, css, less, pug, figma, adobe XD, photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="exd_projects exd">
+            <div class="projects_sections">
+                <h2 data-aos="flip-up">Проекты:</h2>
+                <div class="sections">
+                    <div class="sections_img" data-aos="fade-right">
+                        
+                    </div>
+                    <div class="sections_disc" data-aos="fade-left">
+                        <a href="https://zaborbest.ru" target="_blank">zaborbest.ru</a>
+                        <p>На данный момент единственный коммерческий проект реализованный
+                            мною. В процессе которого я достаточно сильно поднял свой уровень.</p>
+                        <b>Используемые технологии:</b>
+                        <ul>
+                            <li>HTML (Естественно);</li>
+                            <li>CSS (Пффф...);</li>
+                            <li>Ванильного JS (Ну да, ну да чтож еще...);;</li>
+                            <li>Ну и чуть чуть VUE с щепоткой JQuery</li>
+                        </ul>
+                        <b>Кратко:</b>
+                        <p>С помощью YandexAPI определяю местоположения клиента, сравниваю 
+                            данные полученные с (самодельного на NodeJS) REST API, вывожу соотвествующий 
+                            контент. И это все называется “Гео-тарггетинг”. Адаптивная верстка.</p>
+                        <p>Проект все еще на стадии разработки, и помере возможности и роста моих 
+                            скиллов обновляется и поддерживается.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="exd_contacts exd">
+            <h2 data-aos="flip-up">Контакты:</h2>
+            <div class="contacts_box">
+                <div class="box__avatar" data-aos="fade-right">
+                    <img src="./assets/img/Avatar.png" alt="" srcset="">
+                    <a href="https://github.com/exdude">GitHub</a>
+                </div>
+                <div class="box_contacts" data-aos="fade-left">
+                    <p>Исхаков Ринат</p>
+                    <span>
+                        <b>Телефон:</b>
+                        <a href="tel:89876024689">+ 7 (987)-602-46-89</a>
+                    </span>
+                    <span>
+                        <b>Почта:</b>
+                        <a href="mailto:exd4work@gmail.com">exd4work@gmail.com</a>
+                    </span>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_contain">
+            <a><b>EXD</b></a>
+            <a>(author) EXD 2020</a>
+            <a href="https://www.figma.com/file/OdYoNg21jAS1VJeLMI49Xo/exd?node-id=0%3A1" target="_blank">Figma link</a>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/vue.js"></script>
+</body>
+</html>

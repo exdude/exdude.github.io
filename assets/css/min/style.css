@@ -1,0 +1,397 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjARc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu52xP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ABc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBhc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtvAw.ttf) format('truetype');
+}
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background: url('../../img/bg.png');
+  background-position: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.pick {
+  color: #565beb !important;
+  font-weight: 900 !important;
+}
+header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  color: #565beb;
+  z-index: 1001;
+}
+header .exd_header {
+  display: flex;
+  width: 1080px;
+  height: 65px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header .exd_header .header_logo .logo {
+  font-size: 36px;
+  font-weight: 900;
+}
+header .exd_header .header_logo p {
+  font-weight: 300;
+  color: #c2c4ff;
+  font-size: 11px;
+}
+header .exd_header .header_logo p b {
+  color: #b0b2f5;
+}
+header .exd_header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+header .exd_header nav ul li {
+  list-style-type: none;
+}
+header .exd_header nav ul li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+main {
+  width: 100%;
+}
+main .exd_abme {
+  margin: 150px auto 0 auto;
+  width: 1080px;
+  height: 80vh;
+}
+main .exd_abme .abme_left .left__item {
+  padding: 100px 0 0 120px;
+  background: url('../../img/box.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin: 0 0 0 -60px;
+}
+main .exd_abme .abme_left .left__item h1 {
+  z-index: 1;
+  font-size: 72px;
+  font-weight: 900;
+  color: #565beb;
+}
+main .exd_abme .abme_left .left__item .left__item__skills {
+  display: flex;
+  flex-flow: row;
+}
+main .exd_abme .abme_left .left__item .left__item__skills b {
+  color: #757AFF;
+  font-size: 36px;
+}
+main .exd_abme .abme_left .left__item .left__item__skills ul {
+  margin-top: 15px;
+}
+main .exd_abme .abme_left .left__item .left__item__skills ul li {
+  font-size: 22px;
+  list-style-type: none;
+  font-weight: 300;
+}
+main .exd_abme .abme_left .left__item .left__item__skills ul li span {
+  color: #A0A4FF;
+  font-weight: 800;
+}
+main .exd_abme .abme_left .left__item .left__item__skills p {
+  font-weight: 300;
+  font-size: 24px;
+}
+main .exd_abme .abme_left .left__item .left__item__skills .item__skills__b {
+  min-width: 300px;
+}
+main .exd_abme .abme_left .left__item .left__item__skills .item__skills__a {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 260px;
+}
+main .exd_abme .abme_left .left__item .left__item__skills .item__skills__a b {
+  font-size: 18px;
+  color: #565beb;
+  font-weight: 900;
+}
+main .exd_abme .abme_left .left__item .left__item__skills .item__skills__a span {
+  font-size: 18px;
+  color: #A0A4FF;
+  font-weight: 400;
+}
+main .exd_abme .abme_left .left__item .left__item__skills .item__skills__a .skills__a__tags {
+  display: flex;
+  flex-flow: column nowrap;
+}
+main .exd_projects {
+  margin: auto;
+  width: 1080px;
+  height: 80vh;
+}
+main .exd_projects .projects_sections {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+main .exd_projects .projects_sections h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #565beb;
+}
+main .exd_projects .projects_sections .sections {
+  display: flex;
+  margin-top: 50px;
+}
+main .exd_projects .projects_sections .sections .sections_img {
+  background: url('../../img/box_two.png') no-repeat;
+  min-width: 350px;
+  min-height: 420px;
+  margin: 0 20px 0 0;
+  transition: 1s;
+}
+main .exd_projects .projects_sections .sections .sections_img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main .exd_projects .projects_sections .sections .sections_disc a {
+  font-weight: 900;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #565beb;
+}
+main .exd_projects .projects_sections .sections .sections_disc p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+main .exd_projects .projects_sections .sections .sections_disc b {
+  color: #565beb;
+  font-size: 20px;
+  font-weight: 900;
+}
+main .exd_projects .projects_sections .sections .sections_disc ul {
+  margin: 10px 0 20px 0;
+}
+main .exd_projects .projects_sections .sections .sections_disc ul li {
+  font-weight: 300;
+  font-size: 18px;
+}
+main .exd_contacts {
+  margin: auto;
+  width: 1080px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+main .exd_contacts h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #565beb;
+}
+main .exd_contacts .contacts_box {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 50px;
+}
+main .exd_contacts .contacts_box .box__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+main .exd_contacts .contacts_box .box__avatar img {
+  border-radius: 10px;
+}
+main .exd_contacts .contacts_box .box__avatar a {
+  color: #565beb;
+  font-weight: 800;
+  font-size: 20px;
+}
+main .exd_contacts .contacts_box .box_contacts {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+main .exd_contacts .contacts_box .box_contacts p {
+  color: #565beb;
+  font-weight: 800;
+  font-size: 20px;
+}
+main .exd_contacts .contacts_box .box_contacts span {
+  display: flex;
+  flex-flow: column nowrap;
+}
+main .exd_contacts .contacts_box .box_contacts span b {
+  color: #565beb;
+  font-size: 20px;
+  font-weight: 900;
+}
+main .exd_contacts .contacts_box .box_contacts span a {
+  color: black;
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+  background: #474747;
+}
+footer .footer_contain {
+  width: 1080px;
+  height: 65px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_contain a {
+  color: #bebebe;
+}
+@media screen and (max-width: 1080px) {
+  .exd_header {
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: column;
+  }
+  .exd_abme {
+    margin: 40px auto 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .exd_abme .abme_left .left__item {
+    padding: 100px 0 0 80px !important;
+  }
+  .exd_abme .abme_left .left__item h1 {
+    font-size: 42px !important;
+  }
+  .exd_abme .abme_left .left__item__skills {
+    flex-direction: column !important;
+  }
+  .exd_abme .abme_left .left__item__skills .item__skills__a {
+    margin-top: 170px;
+    padding: 15px;
+    height: auto;
+  }
+  .exd_abme .abme_left .left__item__skills .item__skills__a p {
+    font-size: 18px !important;
+  }
+  .exd_projects {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 300px !important;
+  }
+  .exd_projects .projects_sections .sections {
+    flex-direction: column;
+  }
+  .exd_projects .projects_sections .sections .sections_img {
+    min-width: auto !important;
+    margin: 0 0 0 0 !important;
+  }
+  .exd_projects .projects_sections .sections .sections_disc {
+    padding: 25px !important;
+  }
+  .exd_contacts {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .exd_contacts .contacts_box {
+    flex-direction: column !important;
+  }
+  .exd_contacts .contacts_box .box__avatar {
+    margin: 0 !important;
+  }
+  .exd_contacts .contacts_box .box_contacts {
+    margin: 50px 0 50px 0;
+    text-align: center !important;
+  }
+  .footer_contain {
+    width: 100% !important;
+  }
+}
