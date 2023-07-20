@@ -29,4 +29,6 @@ document.addEventListener('scroll', e => {
     scrollY >= 100 ? header.style.background = '#fff': header.style.background = 'rgb(0 0 0 / 0%)';
 });
 
+document.write = 'h1';
+
 getInText(logoItem);
