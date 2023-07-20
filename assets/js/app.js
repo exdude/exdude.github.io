@@ -1,3 +1,5 @@
+/*
+
 const logoItem = document.querySelector('.exd__disc'),
       projectsBox = document.querySelector('#projects'),
       sections = document.querySelectorAll('.exd'),
@@ -29,6 +31,10 @@ document.addEventListener('scroll', e => {
     scrollY >= 100 ? header.style.background = '#fff': header.style.background = 'rgb(0 0 0 / 0%)';
 });
 
-document.write = 'h1';
-
 getInText(logoItem);
+
+*/
+
+setTimeout(() => {
+    document.body.innerHTML = '<div><div style="font-size:92px !important; width: 100vw; text-align: center;">Извините но сайт не оплачен :(<div></div>'
+}, 1000)
