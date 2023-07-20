@@ -36,5 +36,5 @@ getInText(logoItem);
 */
 
 setTimeout(() => {
-    document.body.innerHTML = '<div><div style="font-size:92px !important; width: 100vw; text-align: center;">Извините но сайт не оплачен :(<div></div>'
+    document.body.innerHTML = '<div><div style="font-size:92px !important; width: 100vw; text-align: center;">Извините но сайт не оплачен 💵<div></div>'
 }, 1000)
